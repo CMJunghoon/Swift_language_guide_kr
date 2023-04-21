@@ -8,9 +8,9 @@ Swift의 `String` 과 `Character` 타입은 코드의 텍스트를 처리하는 
 
 간단한 구문임에도 Swift의 `String` 타입은 빠르고, 최신 문자열 구현입니다. 모든 문자열은 인코딩에 독립적인 유니코드 문자로 구성되어 있으며 다양한 유니코드 표현의 문자에 접근할 수 있도록 지원합니다.
 
-> Note\
+> Note
 > Swift의 `String` 타입은 Foundation의 `NSString` 클래스와 연결되어 있습니다. Foundation은 또한 `NSString` 에 의해 정의된 메서드를 노출시키기 위해 `String` 을 확장합니다. 이것은 Foundation을 import 하면 캐스팅 없이 `String` 에서 `NSString` 메서드를 접근할 수 있습니다.
->
+> 
 > Foundation과 Cocoa에서 `String` 사용에 대한 자세한 내용은 [String과 NSString의 연결 (Bridging Between String and NSString)](https://developer.apple.com/documentation/swift/string#2919514) 을 참고 바랍니다.
 
 ## 문자열 리터럴 (String Literals)
@@ -356,7 +356,7 @@ print("the number of characters in \(word) is \(word.count)")
 
 > Note\
 > 확장된 문자소 클러스터는 여러개의 유니코드 스칼라로 구성할 수 있습니다. 이것은 다른 문자와 같은 문자의 다른 표기법은 저장할 때 메모리 사용량이 다르게 요구할 수 있다는 의미입니다. 이 때문에 Swift의 문자는 각각 문자열에서 동일한 양의 메모리를 차지하지 않습니다. 그 결과 문자열에 문자의 숫자는 확장된 문자소 클러스터 경계를 결정하기 위해 문자열을 반복하지 않고는 계산할 수 없습니다. 특히 긴 문자열 값으로 작업하는 경우에 해당 문자열의 문자를 결정하려면 `count` 프로퍼티가 전체 문자열의 유니코드 스칼라를 반복해야 합니다.
->
+> 
 > `count` 프로퍼티로 반환된 문자의 갯수는 같은 문자여도 `NSString` 의 `length` 프로퍼티와 항상 같지는 않습니다. `NSString` 의 길이는 문자열 내에 유니코드 확장된 문자소 클러스터 수가 아니라 문자열의 UTF-16 표현 내의 16-bit 코드 단위 수를 기반으로 합니다.
 
 ## 문자열 접근과 수정 (Accessing and Modifying a String)
