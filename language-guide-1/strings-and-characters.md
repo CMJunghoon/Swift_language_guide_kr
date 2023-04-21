@@ -9,6 +9,7 @@ Swift의 `String` 과 `Character` 타입은 코드의 텍스트를 처리하는 
 간단한 구문임에도 Swift의 `String` 타입은 빠르고, 최신 문자열 구현입니다. 모든 문자열은 인코딩에 독립적인 유니코드 문자로 구성되어 있으며 다양한 유니코드 표현의 문자에 접근할 수 있도록 지원합니다.
 
 > Note
+> 
 > Swift의 `String` 타입은 Foundation의 `NSString` 클래스와 연결되어 있습니다. Foundation은 또한 `NSString` 에 의해 정의된 메서드를 노출시키기 위해 `String` 을 확장합니다. 이것은 Foundation을 import 하면 캐스팅 없이 `String` 에서 `NSString` 메서드를 접근할 수 있습니다.
 > 
 > Foundation과 Cocoa에서 `String` 사용에 대한 자세한 내용은 [String과 NSString의 연결 (Bridging Between String and NSString)](https://developer.apple.com/documentation/swift/string#2919514) 을 참고 바랍니다.
