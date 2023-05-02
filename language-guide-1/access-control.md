@@ -32,7 +32,7 @@ Swift는 코드 내에서 엔티티에 대해 5개의 다른 _접근 수준 \(ac
 
 Open 접근은 가장 높은 \(가장 적은 제약\) 접근 수준이며 private 접근은 가장 적은 \(가장 높은 제약\) 접근 수준입니다.
 
-Open 접근은 클래스와 클래스 멤버에만 적용되고 아래의 [서브 클래싱 \(Subclassing\)](access-control.md#subclassing) 에서 설명 하듯이 모듈 외부의 코드를 하위 클래스와 재정의할 수 있다는 점에서 public 접근과 다릅니다. 명시적으로 클래스를 개방형으로 표기하면 해당 클래스를 상위 클래스로 사용하는 다른 모듈의 코드가 미치는 영향을 고려하고 이에 따라 클래스 코드를 설계했음을 나타냅니다.
+Open 접근은 클래스와 클래스 멤버에만 적용되고 아래의 [서브 클래싱 \(Subclassing\)](https://github.com/bbiguduk/Swift_language_guide_kr/tree/master/language-guide-1/access-control.md#subclassing) 에서 설명 하듯이 모듈 외부의 코드를 하위 클래스와 재정의할 수 있다는 점에서 public 접근과 다릅니다. 명시적으로 클래스를 개방형으로 표기하면 해당 클래스를 상위 클래스로 사용하는 다른 모듈의 코드가 미치는 영향을 고려하고 이에 따라 클래스 코드를 설계했음을 나타냅니다.
 
 ### 접근 수준의 기본 원칙 \(Guiding Principle of Access Levels\)
 
@@ -361,4 +361,3 @@ extension SomeStruct: SomeProtocol {
 
 > Note   
 > 이 규칙은 프로토콜 준수성을 충족하는데 사용되는 관련된 타입의 타입 별칭에도 적용됩니다.
-
